@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohin Nayar | Aerospace Engineer & Quant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">RN<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-tag mono">MEng Aeronautical Engineering · Imperial College London</p>
+      <h1 class="hero-name">Rohin<br /><span class="accent">Nayar</span></h1>
+      <div class="hero-roles">
+        <span id="typed-role"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Building at the intersection of quantitative finance and high-performance systems.
+        From sub-50 ms trading infrastructure to distributed data architectures.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/rohin-nayar" target="_blank" class="btn btn-ghost">GitHub →</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT / STATS -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">01 · About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            MEng Aeronautical Engineering graduate from <strong>Imperial College London</strong> working at
+            the intersection of quantitative modelling and high-performance systems engineering.
+          </p>
+          <p>
+            I combine analytical depth with practical implementation — moving from research concepts to
+            production-grade systems. Comfortable operating in performance-critical environments where
+            precision and reliability matter.
+          </p>
+          <p>
+            Outside of work: endurance athlete training for Ironman 70.3, BUCS Imperial Athletics, competitive
+            Rugby, RAF Air Training Corps Sergeant, and drone photography.
+          </p>
+          <div class="about-links">
+            <a href="mailto:rohinnayar@protonmail.com" class="inline-link">rohinnayar@protonmail.com</a>
+            <a href="https://github.com/rohin-nayar" target="_blank" class="inline-link">github.com/rohin-nayar</a>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card" data-target="50" data-suffix="ms">
+            <div class="stat-number"><span class="count">0</span><span class="stat-unit">ms</span></div>
+            <div class="stat-label">Order routing latency achieved</div>
+          </div>
+          <div class="stat-card" data-target="100" data-suffix="+">
+            <div class="stat-number"><span class="count">0</span><span class="stat-unit">+</span></div>
+            <div class="stat-label">Students mentored</div>
+          </div>
+          <div class="stat-card" data-target="18" data-suffix="x">
+            <div class="stat-number"><span class="count">0</span><span class="stat-unit">x</span></div>
+            <div class="stat-label">HPC speedup (OpenMP/MPI)</div>
+          </div>
+          <div class="stat-card" data-target="2" data-suffix="%">
+            <div class="stat-number">Top <span class="count">0</span><span class="stat-unit">%</span></div>
+            <div class="stat-label">Institutional trading simulations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">02 · Skills</span>
+        <h2>Core Competencies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Python</span>
+            <span class="tag tag-primary">C++</span>
+            <span class="tag tag-primary">MATLAB</span>
+            <span class="tag tag-primary">SQL</span>
+            <span class="tag tag-primary">Bash</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Infrastructure & Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag tag-secondary">AWS</span>
+            <span class="tag tag-secondary">Microsoft Azure</span>
+            <span class="tag tag-secondary">GCP</span>
+            <span class="tag tag-secondary">Linux</span>
+            <span class="tag tag-secondary">Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Data & Streaming</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">Apache Kafka</span>
+            <span class="tag tag-accent">ETL Pipelines</span>
+            <span class="tag tag-accent">pandas</span>
+            <span class="tag tag-accent">NumPy</span>
+            <span class="tag tag-accent">asyncio</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Quant & ML</h3>
+          <div class="skill-tags">
+            <span class="tag tag-gold">Time-Series Modelling</span>
+            <span class="tag tag-gold">Bayesian Methods</span>
+            <span class="tag tag-gold">scikit-learn</span>
+            <span class="tag tag-gold">Statistical Inference</span>
+            <span class="tag tag-gold">Deep RL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">HPC</h3>
+          <div class="skill-tags">
+            <span class="tag tag-hpc">OpenMP</span>
+            <span class="tag tag-hpc">MPI</span>
+            <span class="tag tag-hpc">CUDA</span>
+            <span class="tag tag-hpc">C++ OOP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Trading</h3>
+          <div class="skill-tags">
+            <span class="tag tag-trading">Low-Latency Execution</span>
+            <span class="tag tag-trading">Event-Driven Arch.</span>
+            <span class="tag tag-trading">WebSocket Ingestion</span>
+            <span class="tag tag-trading">Slippage Analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">03 · Experience</span>
+        <h2>Professional History</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Aug 2025 – Dec 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-company">Zanista AI</div>
+            <div class="timeline-role">Quantitative Trading Analyst</div>
+            <ul class="timeline-bullets">
+              <li>Refactored systematic multi-asset trading framework; redesigned Python execution and websocket ingestion to achieve <strong>sub-50 ms</strong> order routing.</li>
+              <li>Architected automated cross-asset macro research pipeline (beta estimation, covariance modelling, event tagging) — reduced manual analysis time by <strong>35%</strong>.</li>
+              <li>Converted Generative AI news flow into structured macro factor signals for quantifiable trading inputs.</li>
+              <li>SQL-driven slippage decomposition and order flow diagnostics; identified execution inefficiencies.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag-sm">Python</span><span class="tag-sm">WebSocket</span><span class="tag-sm">SQL</span><span class="tag-sm">Gen AI</span><span class="tag-sm">Low-Latency</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Sep 2024 – Jun 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-company">Imperial College London · Aeronautics</div>
+            <div class="timeline-role">Teaching Assistant</div>
+            <ul class="timeline-bullets">
+              <li>Delivered tutorials in <strong>Probability, Stochastic Calculus and Differential Equations</strong>.</li>
+              <li>Increased conceptual comprehension through structured problem decomposition and MATLAB modelling.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag-sm">MATLAB</span><span class="tag-sm">Stochastic Calculus</span><span class="tag-sm">Probability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Aug 2023 – Aug 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-company">Airbus Defence & Space</div>
+            <div class="timeline-role">Robotics Software Engineer</div>
+            <ul class="timeline-bullets">
+              <li>Automated Linux software package installation via Bash scripting for <strong>500 users</strong>.</li>
+              <li>Deployed real-time distributed data streaming using <strong>Kafka, Python (asyncio)</strong>, processing <strong>100 GB+</strong> time-series data.</li>
+              <li>Reduced R&D expenditure by <strong>15%</strong> through carbon welding process redesign.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag-sm">Kafka</span><span class="tag-sm">Python</span><span class="tag-sm">Linux</span><span class="tag-sm">Bash</span><span class="tag-sm">Jira</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Jun 2023 – Jul 2023</div>
+          <div class="timeline-card">
+            <div class="timeline-company">Imperial Plasma Propulsion Laboratory</div>
+            <div class="timeline-role">Machine Learning Researcher</div>
+            <ul class="timeline-bullets">
+              <li>Awarded <strong>£2,500</strong> competitive research grant — data-driven discovery of governing chaotic equations.</li>
+              <li>Constructed interpretable reduced-order models using <strong>scikit-learn</strong> to approximate nonlinear plasma dynamics.</li>
+              <li>Stress-tested model generalisation under regime shifts; presented research findings.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag-sm">scikit-learn</span><span class="tag-sm">ML Research</span><span class="tag-sm">Chaos Theory</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">04 · Projects</span>
+        <h2>Featured Work</h2>
+      </div>
+
+      <!-- Manual featured projects -->
+      <div class="projects-featured">
+
+        <div class="project-card featured" data-animate>
+          <div class="project-header">
+            <div class="project-icon">📈</div>
+            <div class="project-meta">
+              <span class="project-date mono">Oct 2024 – Jun 2025</span>
+              <span class="project-badge">Leadership</span>
+            </div>
+          </div>
+          <h3>Imperial Algorithmic Trading Society</h3>
+          <p class="project-subtitle">Head of Quantitative Trading</p>
+          <p class="project-desc">Directed 20-member quant team. Engineered 20+ features for electricity forecasting model — achieved <strong>17% RMSE reduction</strong> on out-of-sample data and <strong>88% predictive accuracy</strong> for short-term imbalance price spikes.</p>
+          <p class="project-desc">Ranked in top <strong>2%</strong> across institutional trading simulations hosted by Glencore, EDF & CME.</p>
+          <div class="project-tags">
+            <span class="tag-sm">Python</span><span class="tag-sm">Time-Series</span><span class="tag-sm">Feature Engineering</span><span class="tag-sm">Cross-Validation</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-animate>
+          <div class="project-header">
+            <div class="project-icon">⚛️</div>
+            <div class="project-meta">
+              <span class="project-date mono">Feb 2025 – Jun 2025</span>
+              <span class="project-badge badge-hpc">HPC</span>
+            </div>
+          </div>
+          <h3>Molecular Dynamics Simulation</h3>
+          <p class="project-subtitle">High Performance Computing · C++</p>
+          <p class="project-desc">Full MD simulation in C++ with parallel computation via <strong>OpenMP</strong> (shared memory) and <strong>MPI</strong> (distributed memory), achieving <strong>18x speedup</strong>. Offloaded kernels to <strong>CUDA</strong>, achieving <strong>91.2% GPU runtime reduction</strong>.</p>
+          <div class="project-tags">
+            <span class="tag-sm">C++</span><span class="tag-sm">OpenMP</span><span class="tag-sm">MPI</span><span class="tag-sm">CUDA</span><span class="tag-sm">OOP</span>
+          </div>
+          <a href="https://github.com/rohin-nayar" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card" data-animate>
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+            <div class="project-meta">
+              <span class="project-date mono">2024–2025</span>
+              <span class="project-badge badge-ml">ML</span>
+            </div>
+          </div>
+          <h3>Hypernetworks in Deep RL</h3>
+          <p class="project-subtitle">Master's Thesis · Score: 74%</p>
+          <p class="project-desc">Investigated hypernetworks for adaptive control in complex systems using deep reinforcement learning. Achieved significant adaptability improvements on dynamic control benchmarks.</p>
+          <div class="project-tags">
+            <span class="tag-sm">Deep RL</span><span class="tag-sm">Hypernetworks</span><span class="tag-sm">Python</span><span class="tag-sm">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-animate>
+          <div class="project-header">
+            <div class="project-icon">📚</div>
+            <div class="project-meta">
+              <span class="project-date mono">Jan 2020 – Present</span>
+              <span class="project-badge badge-green">EdTech</span>
+            </div>
+          </div>
+          <h3>Radon Tuition</h3>
+          <p class="project-subtitle">AI-driven education platform</p>
+          <p class="project-desc">Mentored <strong>100+ students</strong> over 6+ years. Built a generative AI feedback system to analyse student work and performance metrics — achieved <strong>97% satisfaction</strong> and <strong>99% grade improvement</strong> rates.</p>
+          <div class="project-tags">
+            <span class="tag-sm">Gen AI</span><span class="tag-sm">EdTech</span><span class="tag-sm">Python</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub repos dynamically loaded -->
+      <div class="github-section">
+        <h3 class="github-section-title">GitHub Repositories</h3>
+        <div id="github-repos" class="repos-grid">
+          <div class="repos-loading">
+            <div class="spinner"></div>
+            <p class="mono">Fetching from GitHub API...</p>
+          </div>
+        </div>
+        <a href="https://github.com/rohin-nayar" target="_blank" class="btn btn-ghost github-all">View all on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label mono">05 · Education</span>
+        <h2>Academic Background</h2>
+      </div>
+      <div class="edu-card" data-animate>
+        <div class="edu-logo">
+          <div class="imperial-badge">IC</div>
+        </div>
+        <div class="edu-content">
+          <h3>Imperial College London</h3>
+          <p class="edu-degree">MEng Aeronautical Engineering with a Year in Industry</p>
+          <p class="edu-grade">Upper Second Class Honours · Oct 2020 – Jun 2025</p>
+          <div class="edu-highlights">
+            <div class="edu-highlight">
+              <span class="highlight-icon">🏆</span>
+              <span>2nd in cohort of 170 — Third Year Applications Prize</span>
+            </div>
+            <div class="edu-highlight">
+              <span class="highlight-icon">✈️</span>
+              <span>Second Best Aerospace Vehicle Design Performance</span>
+            </div>
+            <div class="edu-highlight">
+              <span class="highlight-icon">📝</span>
+              <span>Thesis: Hypernetworks in Deep RL for Adaptive Control (74%)</span>
+            </div>
+          </div>
+          <div class="edu-modules">
+            <span class="module-tag">Accounting</span>
+            <span class="module-tag">High Performance Computing</span>
+            <span class="module-tag">Optimisation</span>
+            <span class="module-tag">Stochastic Calculus</span>
+            <span class="module-tag">Numerical Methods</span>
+            <span class="module-tag">Mathematics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <div class="section-header">
+        <span class="section-label mono">06 · Contact</span>
+        <h2>Get In Touch</h2>
+      </div>
+      <p class="contact-subtext">
+        Open to quantitative finance, trading technology, and high-performance systems roles.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:rohinnayar@protonmail.com" class="contact-card">
+          <div class="contact-icon">✉</div>
+          <div class="contact-info">
+            <div class="contact-label mono">Email</div>
+            <div class="contact-value">rohinnayar@protonmail.com</div>
+          </div>
+        </a>
+        <a href="https://github.com/rohin-nayar" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label mono">GitHub</div>
+            <div class="contact-value">rohin-nayar</div>
+          </div>
+        </a>
+        <a href="tel:+447484700982" class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info">
+            <div class="contact-label mono">Mobile</div>
+            <div class="contact-value">+44 7484 700982</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="mono">Rohin Nayar · <span id="year"></span></span>
+      <span class="mono footer-right">Built with vanilla JS & GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
