@@ -374,6 +374,45 @@ body {
 .stat-unit { font-size: 1.1rem; color: var(--text-muted); }
 .stat-label { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
 
+/* INFO CARDS (About section) */
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.25rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: var(--cyan);
+  opacity: 0.6;
+}
+.info-card:hover { border-color: rgba(0,212,255,0.3); box-shadow: var(--shadow-glow); }
+.info-icon { font-size: 1.3rem; margin-bottom: 0.1rem; }
+.info-main {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--cyan);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.info-ord {
+  font-size: 0.85rem;
+  font-weight: 600;
+  vertical-align: super;
+  color: var(--text-muted);
+}
+.info-label { font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; }
+
 /* ===== SKILLS ===== */
 .skills-grid {
   display: grid;
